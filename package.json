@@ -1,6 +1,6 @@
 {
   "name": "@zlxj/cli",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "@zlxj/cli脚手架工具",
   "main": "bin/cli.js",
   "type": "module",
@@ -21,6 +21,10 @@
     "dist",
     "bin"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:zhanglong1009/zlxj-cli.git"
+  },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
