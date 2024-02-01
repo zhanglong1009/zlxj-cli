@@ -6,6 +6,7 @@ import { isExistsFile } from './util.js';
 import { createProject } from './createTemplate.js';
 import chalk from 'chalk';
 import figlet from 'figlet'
+import gradient from 'gradient-string'
 
 
 
@@ -17,14 +18,15 @@ cli.version(version)
 cli
     .command('create', '开始创建项目')
     .action(async () => {
-        log(chalk.hex('#DEADED').bold('欢迎使用zlxj-cli'));
-        log(figlet.textSync('zlxj', {
-            font: '3D-ASCII',
-            horizontalLayout: 'default',
-            verticalLayout: 'default',
-            width: 80,
-            whitespaceBreak: true
-        }))
+        
+        log(`\n\n${gradient.morning(`😘 欢迎使用@zlxj/cli  \n\n`)}${chalk.greenBright('🤡 git地址:')}${chalk.underline.greenBright('https://github.com/zhanglong1009/zlxj-cli')}\n\n`);
+        // log(figlet.textSync('zlxj', {
+        //     font: '3D-ASCII',
+        //     horizontalLayout: 'default',
+        //     verticalLayout: 'default',
+        //     width: 80,
+        //     whitespaceBreak: true
+        // }))
 
         const projectName = await projectNamePrompt()
         // 如果文件名存在,则重新输入文件名

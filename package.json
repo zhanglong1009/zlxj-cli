@@ -1,11 +1,11 @@
 {
   "name": "@zlxj/cli",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "@zlxj/cli脚手架工具",
   "main": "bin/cli.js",
   "type": "module",
   "bin": {
-    "zlxj":"bin/cli.js"
+    "zlxj": "bin/cli.js"
   },
   "scripts": {
     "build": "tsup",
@@ -37,9 +37,11 @@
     "esbuild": "^0.20.0",
     "figlet": "^1.7.0",
     "fs-extra": "^11.2.0",
+    "gradient-string": "^2.0.2",
     "inquirer": "^8.2.5",
     "ora": "^8.0.1",
     "picocolors": "^1.0.0",
+    "progress-estimator": "^0.3.1",
     "tsup": "^8.0.1",
     "typescript": "^5.3.3"
   }
